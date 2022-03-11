@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,71 +8,132 @@
     <title>AnHydrase Cart</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1> <img src="images/shopping-cart.png" width="50">Cart</h1>
-    <nav>
-        <div>
-            <li><a href="#"></a>Home</li>
-            <li> <a href="#"></a>About</li>
-            <li> <a href="#"></a>Contact</li>
-        </div>
-    </nav>
-    <div>
-        <div>
-            <input type="text" placeholder="search">
-            <button>search</button>
-        </div><br>
 
-        <div>
-            <ul><img src="images/apple.jpg" width="200" alt="items"></ul>
-            <figcaption> <ul>Apple $3 <br> quantity &ensp;<input value="1" type="number" min="1"><br>
-                <button> remove</button></ul> 
-            </figcaption>
-        </div>
+    <div class="container">
+        <h1> <img src="images/shopping-cart.png" width="50">Cart</h1>
 
-        <div>
-            <ul><img src="images/sound system.jpg" width="200" alt="items"></ul>
-            <figcaption> <ul> Sound system $70<br> quantity &ensp; <input value="1" type="number" min="1"> <br>
-            <button> remove</button></ul></figcaption>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li> <a href="#"></a>Home</li>
+                    <li> <a href="#"></a>About</li>
+                    <li> <a href="#"></a>Contact</li>
+                </ul>
+            </nav>
         </div>
+        <div>
+            <div>
+                <input type="text" placeholder="search">
+                <button>search</button>
+            </div><br>
 
-        <div>
-            <ul> <img src="images/strawberry.jpg" width="200" alt="items"></ul>
-            <figcaption> <ul>Strawberries $4 <br> quantity &ensp;<input value="1" type="number" min="1"> <br>
-                 <button> remove</button> </ul></figcaption>
-        </div>
+            <!----Cart Item Details---->
 
-        <div>
-            <ul> <img src="images/oranges.jpg" width="150" alt="items"> </ul>
-            <figcaption><ul>Orange $2 <br> quantity &ensp;<input value="1" type="number" min="1"><br>
-                <button> remove</button></ul></figcaption>
-        </div>
+            <div class="small-container cart-page">
 
-        <div>
-            <ul> <img src="images/hp-laptop.jpg" width="200" alt="items"></ul>
-            <figcaption> <ul> Hp laptop $200<br> quantity &ensp; <input value="1" type="number" min="1"><br>
-                <button> remove</button></ul></figcaption>
-        </div>
-        <div>
-            <ul> <img src="images/pressing iron.jpg" width="200" alt="items"></ul>
-            <figcaption> <ul> Pressing iron $20 <br> quantity &ensp;<input value="1" type="number" min="1"> <br>
-                <button> remove</button></ul></figcaption>
-        </div>
-        <div> 
-            <ul> <img src="images/washing machine.jpg" width="200" alt="items"></ul>
-            <figcaption> <ul> Washing machine $180<br> quantity &ensp;<input value="1" type="number" min="1"><br>
-                <button> remove</button></ul></figcaption>
-        </div>
-        <div> 
-            <ul> <img src="images/fridge.jpg" width="200" alt="items"></ul>
-            <figcaption> <ul>Fridge $130<br> quantity &ensp;<input value="1" type="number" min="1"><br>
-                <button> remove</button></ul></figcaption>
-        </div>
-        <div>
-            <h4>Cart summary</h4>
-            <h5>Total: $609 </h5>
-            <p>Proceed to make payments &ensp;<button>pay</button></p>
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/apple.jpg" width="200">
+                                <div>
+                                    <p>Sweet Apple</p>
+                                    <small>Price: $3.00</small>
+                                    <a href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50</td>
+                    </tr>
+                </table>
+                
+                <!----
+                <div>
+                    <ul><img src="images/apple.jpg" width="200" alt="items"></ul>
+                    <figcaption>
+                        <ul>Apple $3 <br> quantity &ensp;<input value="1" type="number" min="1"><br>
+                            <button> remove</button>
+                        </ul>
+                    </figcaption>
+                </div>
+
+                <div>
+                    <ul><img src="images/sound system.jpg" width="200" alt="items"></ul>
+                    <figcaption>
+                        <ul> Sound system $70<br> quantity &ensp; <input value="1" type="number" min="1"> <br>
+                            <button> remove</button>
+                        </ul>
+                    </figcaption>
+                </div>
+
+                <div>
+                    <ul> <img src="images/strawberry.jpg" width="200" alt="items"></ul>
+                    <figcaption>
+                        <ul>Strawberries $4 <br> quantity &ensp;<input value="1" type="number" min="1"> <br>
+                            <button> remove</button>
+                        </ul>
+                    </figcaption>
+                </div>
+
+                <div>
+                    <ul> <img src="images/oranges.jpg" width="150" alt="items"> </ul>
+                    <figcaption>
+                        <ul>Orange $2 <br> quantity &ensp;<input value="1" type="number" min="1"><br>
+                            <button> remove</button>
+                        </ul>
+                    </figcaption>
+                </div>
+
+                <div>
+                    <ul> <img src="images/hp-laptop.jpg" width="200" alt="items"></ul>
+                    <figcaption>
+                        <ul> Hp laptop $200<br> quantity &ensp; <input value="1" type="number" min="1"><br>
+                            <button> remove</button>
+                        </ul>
+                    </figcaption>
+                </div>
+                <div>
+                    <ul> <img src="images/pressing iron.jpg" width="200" alt="items"></ul>
+                    <figcaption>
+                        <ul> Pressing iron $20 <br> quantity &ensp;<input value="1" type="number" min="1"> <br>
+                            <button> remove</button>
+                        </ul>
+                    </figcaption>
+                </div>
+                <div>
+                    <ul> <img src="images/washing machine.jpg" width="200" alt="items"></ul>
+                    <figcaption>
+                        <ul> Washing machine $180<br> quantity &ensp;<input value="1" type="number" min="1"><br>
+                            <button> remove</button>
+                        </ul>
+                    </figcaption>
+                </div>
+                <div>
+                    <ul> <img src="images/fridge.jpg" width="200" alt="items"></ul>
+                    <figcaption>
+                        <ul>Fridge $130<br> quantity &ensp;<input value="1" type="number" min="1"><br>
+                            <button> remove</button>
+                        </ul>
+                    </figcaption>
+                </div>
+                <div>
+                    <h4>Cart summary</h4>
+                    <h5>Total: $609 </h5>
+                    <p>Proceed to make payments &ensp;<button>pay</button></p>
+                </div>
+                 -->
+            </div>
         </div>
     </div>
 </body>
+
 </html>

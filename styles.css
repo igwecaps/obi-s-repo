@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(3, 12, 3);
+    text-align: center;
+}
+.parent{
+    display: grid;
+    grid-template-rows: repeat(4, 200px);
+}
+/* div ONE stylings*/
+.one{
+    display:grid;
+    background-color:transparent;
+    grid-template-columns: repeat(3,1fr);
+    margin: 30px;
+    padding: 10px;
+}
+.A{
+    background-color: red;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+
+}
+.B{
+    background-color: pink;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+.C{
+    background-color: yellow;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+
+/* div TWO stylings*/
+.two{
+    display: grid;
+    background-color: transparent;
+    grid-template-columns: 3fr 1fr;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.D{
+    background-color: blueviolet;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick; 
+}
+.E{
+    background-color: peachpuff;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+
+/* div THREE styling */
+.three{
+    background-color: aqua;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+
+/* div FOUR styling */
+.four{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.F{
+    background-color: lawngreen;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+.G{
+    background-color: royalblue;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+.H{
+    background-color: darkmagenta;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+.I{
+    background-color: khaki;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+.J{
+    background-color: maroon;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+.K{
+    background-color: silver;
+    margin-right: 30px;
+    border-style:ridge;
+    border-color: black;
+    border-width: thick;
+}
+/* media queries*/
+@media screen and (max-width: 768px){
+    .parent{
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .one{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 30px;
+    }
+    .two{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .three{
+        display: grid;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-style:ridge;
+        border-color: black;
+        border-width: thick;
+    }
+    .four{
+        display:flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+}
